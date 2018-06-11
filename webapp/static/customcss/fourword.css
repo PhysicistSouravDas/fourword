@@ -1,0 +1,47 @@
+html,body{
+	height:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar_back{
+	background: #96d529;
+	padding: 5px 0;
+}
+
+.navbar_list{
+	margin-top: 20px;
+}
+
+.navbar_list li{
+	margin-right: 10px;
+}
+
+.cloudimage{
+    mix-blend-mode: multiply;
+    position: absolute;
+    max-width: 50%;
+    margin-left: 38%;
+}
+
+.footer{
+	background-color: #96d529;
+}
+
+.footer i{
+	color: #ffff;
+}
+
+.footer a{
+	color: inherit;
+}
+
+.footer a:hover{
+	color: inherit;
+}
+
+.index_body{
+	background-color: #00131a;
+}

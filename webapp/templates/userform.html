@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+
+{% block body%}
+<body>
+  <div class="container-fluid index_body">
+<form action="{{url_for('home.usereq')}}" method="POST">
+  <div class="form-group" style="color: #bdbdbd; margin-top: 20px;">
+    <br>
+    <label>Describe your friend with 4Words.</label>
+    <small class="form-text text-muted">You're completely anonymous to us.</small>
+    <div>
+      <input type="text" name = "usereq1" class="form-control" placeholder="First Word">
+      <input type="text" name = "usereq2" class="form-control" placeholder="Second Word">
+      <input type="text" name = "usereq3" class="form-control" placeholder="Third Word">
+      <input type="text" name = "usereq4" class="form-control" placeholder="Fourth Word">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" style="margin-bottom: 5px;">Smash me!</button>
+</form>
+</div>
+</body>
+{% endblock %}

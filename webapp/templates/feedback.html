@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block body %}
+<div style="color: #96d529;width:auto; margin:0 auto; text-align: center;">
+<h2>Thanks for visiting, mind giving us feedback?</h2>
+<div>
+	<form action="{{ url_for('home.userfeed') }}" method="POST">
+	<textarea class="form-control" rows="3" name="userfeed" placeholder="Do leave your true words."></textarea>
+	<br>
+	<button type="submit" class="btn btn-primary" style="margin-bottom: 5px;">Smash me!</button>
+	</form>
+
+</div>
+</div>
+{% endblock %}

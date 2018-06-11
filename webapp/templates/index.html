@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>4word BETA</title>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Bootstrap imports -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/customcss/fourword.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+</head>
+
+<body>
+
+<!-- Navigaton bar -->
+<div class="container-fluid navbar_back">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-xs-7">
+        <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Jeongeuidang_logo.png" width="150px" height="80px" class="img-responsive"></a>
+      </div>
+      <div class="col-sm-7 col-xs-5">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_responsive">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar_responsive">
+              <ul class="navbar-nav ml-auto navbar_list">
+                <li>
+                  <a href="/v0.01" class="nav-link">Home</a>
+                </li>
+                <li>
+                  <a href="/v0.01/wow" class="nav-link">Wall of Words</a>
+                </li>
+                <li>
+                  <a href="/v0.01/about" class="nav-link">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+  </div>
+</div>
+<!-- End Navigaton bar -->
+
+<div class="container-fluid index_body">
+  <div class="row">
+    {% block body %}
+    {% endblock %}  
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid footer">
+  <div class="container text-center">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Made with &#9829; and Sweat</p>
+      <a href="https://www.instagram.com/dadwal_akshay/"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/dadwalakshay"><i class="fab fa-github"></i></a>  
+    </div>
+    
+  </div>
+  </div>
+</div>
+<!-- End Footer -->
+
+</body>
+</html>
